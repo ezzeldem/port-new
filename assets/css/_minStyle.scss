@@ -1,0 +1,28 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+body {
+  background-color: rgba($dark_color, 1);
+  font-family: "Poppins",sans-serif;
+  padding:  0 60px 0 0;
+}
+
+
+svg{
+  height: 20px;
+}

@@ -1,0 +1,225 @@
+.nav_box {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.nav_box nav ul li {
+  margin: 20px 0;
+}
+
+.nav_box nav ul li a {
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_box nav ul li a:hover .icon_box, .nav_box nav ul li a.active .icon_box {
+  background-color: #fca311;
+  border-radius: 0 30px  30px 0;
+}
+
+.nav_box nav ul li a:hover .text, .nav_box nav ul li a.active .text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav_box nav ul li a .text {
+  visibility: hidden;
+  opacity: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding: 0 25px 0 30px;
+  background-color: #fca311;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px 0 0 30px;
+}
+
+.nav_box nav ul li a .icon_box {
+  border-radius: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2b2a2a;
+}
+
+.nav_box nav ul li a .icon_box svg {
+  height: 30px;
+  fill: white;
+}
+
+.home_page {
+  padding: 40px;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.home_page::after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fca311;
+  content: "";
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 10% 0, 30% 100%, 0% 100%);
+          clip-path: polygon(0 0, 10% 0, 30% 100%, 0% 100%);
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+}
+
+.home_page .img_box img {
+  border-radius: 30px;
+  height: calc(100vh - 80px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+}
+
+.home_page .about_intro_box {
+  padding: 0 96px;
+}
+
+.home_page .about_intro_box .name_jop {
+  padding: 0 0 0 100px;
+  position: relative;
+}
+
+.home_page .about_intro_box .name_jop::after {
+  height: 4px;
+  content: "";
+  top: 30px;
+  left: 20px;
+  width: 50px;
+  background-color: #fca311;
+  position: absolute;
+}
+
+.home_page .about_intro_box .name_jop .name {
+  font-size: 51px;
+  line-height: 62px;
+  font-weight: 700;
+  color: #fca311;
+}
+
+.home_page .about_intro_box .name_jop .jop {
+  font-size: 51px;
+  line-height: 56px;
+  font-weight: 600;
+  color: white;
+}
+
+.home_page .about_intro_box .intro_prag {
+  margin: 15px 0 28px;
+  font-size: 16px;
+  line-height: 35px;
+  color: white;
+  width: 90%;
+}
+
+.home_page .about_intro_box .buttom_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home_page .about_intro_box .buttom_link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  padding: 16px 35px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid #fca311;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.home_page .about_intro_box .buttom_link a:hover {
+  color: #111111;
+}
+
+.home_page .about_intro_box .buttom_link a:hover::after {
+  -webkit-transform: scale(22);
+          transform: scale(22);
+}
+
+.home_page .about_intro_box .buttom_link a:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  left: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  background-color: #fca311;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background-color: #111111;
+  font-family: "Poppins",sans-serif;
+  padding: 0 60px 0 0;
+}
+
+svg {
+  height: 20px;
+}
+
+.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .home_page .about_intro_box .buttom_link a, .home_page .about_intro_box .buttom_link a:after {
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
