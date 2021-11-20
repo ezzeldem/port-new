@@ -14,7 +14,7 @@
           align-items: center;
           @extend%trans_4;
           &:hover,
-          &.active {gt
+          &.active {
             .icon_box {
               background-color: rgba($gold_color, 1);
               border-radius: 0 30px  30px 0;
