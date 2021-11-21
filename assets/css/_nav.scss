@@ -56,6 +56,7 @@
             background-color: rgba($dark_color2, 1);
             @extend%trans_4;
             position: relative;
+            color: rgba($white_color, 1);
             &:after{
               @extend%trans_4;
               content: "";
@@ -65,10 +66,6 @@
               opacity: 0;
               border-radius:0 50%  50% 0;
               z-index: -1;
-            }
-            svg {
-              height: 30px;
-              fill: rgba($white_color, 1);
             }
           }
         }
