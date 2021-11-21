@@ -92,7 +92,7 @@
   z-index: -1;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 552px) {
   .tab_min_box {
     padding: 0 0 74px !important;
   }
@@ -265,7 +265,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 552px) {
   .home_page .about_intro_box .name_jop .name {
     font-size: 24px;
   }
@@ -331,6 +331,10 @@
   font-weight: 600;
 }
 
+.profile_info .list ul li .title:hover {
+  color: #fca311;
+}
+
 .buttom_link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,7 +344,7 @@
 }
 
 .buttom_link.port_box {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .buttom_link.port_box div {
@@ -711,6 +715,25 @@
   position: absolute;
   inset: 0;
   z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio_tab .filter-content .portfolio_box .link_box i {
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.portfolio_tab .filter-content .portfolio_box:hover .link_box i {
+  opacity: 1;
 }
 
 .portfolio_tab .filter-content .portfolio_box:hover .project_title {
@@ -770,15 +793,24 @@
         -ms-flex: 50%;
             flex: 50%;
   }
+  .experince_box {
+    padding: 0 !important;
+  }
   .experince_box .experince_list .experince_item {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
   }
+  .experince_box .experince_list .experince_item:last-of-type {
+    margin: 0;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 552px) {
+  .buttom_link.port_box {
+    margin: 0;
+  }
   .buttom_link.port_box div {
     max-width: 100%;
     -webkit-box-flex: 100%;
@@ -796,6 +828,9 @@
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
+  }
+  .skills_box .sillks_content .skills-name .skills-p {
+    font-size: 14px;
   }
 }
 
@@ -890,7 +925,10 @@ hr.separator {
   color: white;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 552px) {
+  .tab_title {
+    padding: 20px 0;
+  }
   .tab_title .title {
     font-size: 54px;
   }
@@ -905,7 +943,7 @@ hr.separator {
   }
 }
 
-.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .nav_box nav ul li a .icon_box:after, .buttom_link a, .buttom_link a:after, .sochile_box, .sochile_box:after, .sochile_box .social_links, .sochile_box .social_links a, .portfolio_tab .portfolio_filter_button_box button, .portfolio_tab .filter-content .portfolio_box::after, .portfolio_tab .filter-content .portfolio_box .project_title {
+.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .nav_box nav ul li a .icon_box:after, .profile_info .list ul li .title, .buttom_link a, .buttom_link a:after, .sochile_box, .sochile_box:after, .sochile_box .social_links, .sochile_box .social_links a, .portfolio_tab .portfolio_filter_button_box button, .portfolio_tab .filter-content .portfolio_box .link_box i, .portfolio_tab .filter-content .portfolio_box::after, .portfolio_tab .filter-content .portfolio_box .project_title {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }

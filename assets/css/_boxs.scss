@@ -11,10 +11,16 @@
         .sub_title {
           text-transform: capitalize;
           color: rgba($white_color, 0.8);
+        
         }
         .title {
           color: rgba($white_color, 1);
           font-weight: 600;
+          @extend%trans_4;
+          &:hover{
+            color: rgba($gold_color, 1);
+          
+        }
         }
       }
     }
@@ -25,7 +31,7 @@
   display: flex;
   flex-wrap: wrap;
   &.port_box {
-    margin-top: 60px;
+    margin-top: 20px;
     div {
       flex: 0 0 50%;
       max-width: 50%;
@@ -284,7 +290,7 @@
       background-color: rgba($dark_color2, 1);
       color: rgba($white_color, 1);
       border-radius: 30px;
-      margin:  10px;
+      margin: 10px;
       border: 0;
       font-size: 14px;
       font-weight: 550;
@@ -308,8 +314,22 @@
         position: absolute;
         inset: 0;
         z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+          @extend%trans_4;
+          color: rgba($white_color, 1);
+          font-size: 20px;
+          opacity: 0;
+        }
       }
       &:hover {
+        .link_box {
+          i {
+            opacity: 1;
+          }
+        }
         .project_title {
           opacity: 1;
         }
@@ -369,18 +389,23 @@
     }
   }
   .experince_box {
+    padding: 0 !important;
     .experince_list {
       .experince_item {
         flex: 100%;
         max-width: 100%;
+        &:last-of-type {
+          margin: 0;
+        }
       }
     }
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 552px) {
   .buttom_link {
     &.port_box {
+      margin: 0;
       div {
         max-width: 100%;
         flex: 100%;
@@ -403,6 +428,16 @@
         li {
           flex: 100%;
           max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .skills_box {
+    .sillks_content {
+      .skills-name {
+        .skills-p {
+          font-size: 14px;
         }
       }
     }

@@ -82,8 +82,9 @@ hr.separator {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 552px) {
   .tab_title {
+    padding: 20px 0 ;
     .title {
       font-size: 54px;
     }
