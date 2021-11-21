@@ -19,7 +19,7 @@ a {
 body {
   background-color: rgba($dark_color, 1);
   font-family: "Poppins", sans-serif;
-  // padding:  0 60px 0 0;
+  height: 100vh;
   &::-webkit-scrollbar {
     width: 8px;
   }
@@ -79,5 +79,22 @@ hr.separator {
     padding-bottom: 22px;
     font-size: 26px;
     color: rgba($white_color, 1);
+  }
+}
+
+@media (max-width: 425px) {
+  .tab_title {
+    .title {
+      font-size: 54px;
+    }
+    .sub_title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .sochile_box {
+    font-size: 12px;
   }
 }

@@ -17,7 +17,7 @@
                 <nav>
                     <ul class="list-unstyled">
                         <li>
-                            <a data-tab="home">
+                            <a data-tab="home" class="active">
                                 <span class="text"> Home </span>
                                 <span class="icon_box">
                                     <i class="fas fa-home"></i>
@@ -33,7 +33,7 @@
                             </a>
                         </li>
                         <li>
-                            <a data-tab="portfolio">
+                            <a data-tab="portfolio" class="">
                                 <span class="text"> portfolio </span>
                                 <span class="icon_box">
                                     <i class="fas fa-briefcase"></i>
@@ -45,16 +45,16 @@
             </div>
 
             <div class="tab_min_box">
-                <div class="home_page tab_box" id="home">
-                    <div class="login_layOut"></div>
+                <div class="home_page tab_box active" id="home">
+                  
                     <div class="container-fluid">
                         <div class="row align-items-center justify-content-between">
-                            <div class="col-md-5">
+                            <div class="col-xl-5 col-lg-6">
                                 <div class="img_box">
                                     <img src="assets/img/me.jpg" alt="img" class="img-fluid" />
                                 </div>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-xl-7 col-lg-6">
                                 <div class="about_intro_box">
                                     <div class="name_jop">
                                         <h1 class="name">Ezz Elden Mohamed</h1>
@@ -79,6 +79,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="login_layOut"></div> -->
                 </div>
                 <div class="tab_box" id="about">
                     <div class="login_layOut"></div>
@@ -90,7 +91,7 @@
                             </div>
                         </div>
                         <div class="row align-items-center">
-                            <div class="col-md-8">
+                            <div class="col-lg-8 col-md-12">
                                 <div class="profile_info">
                                     <div class="title_box">
                                         <h4 class="title text-uppercase">PERSONAL INFOS</h4>
@@ -136,7 +137,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-12 order_m">
                                 <div class="img_box">
                                     <img src="assets/img/svg/code.svg" alt="img" loding="lazy" class="img-fluid" />
                                 </div>
@@ -192,15 +193,15 @@
                                             </p>
                                             <ul class="list-unstyled">
                                                 <li>
-                                                    <a href="http://ez.dvtst.com/Elevetor/index.html"> Elfahd Eleveto</a>
+                                                    <a href="http://ez.dvtst.com/Elevetor/index.html"> Elfahd Eleveto <i class="fas fa-link"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://ez.dvtst.com/elmafgood/index.html"> Elmafgod Mawgod</a>
+                                                    <a href="https://ez.dvtst.com/elmafgood/index.html"> Elmafgod Mawgod <i class="fas fa-link"></i></a>
                                                 </li>
                                                 <li>
                                                     <a href="https://ez.dvtst.com/smartparking/index.html">
-                                                        Smart Parking
-                                                    </a>
+                                                        Smart Parking <i class="fas fa-link"></i>
+                                                    </a>  
                                                 </li>
                                             </ul>
                                         </li>
@@ -240,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab_box portfolio_tab active" id="portfolio">
+                <div class="tab_box portfolio_tab" id="portfolio">
                     <div class="login_layOut"></div>
                     <div class="container">
                         <div class="row">
@@ -262,9 +263,10 @@
 
                         <div class="col-md-12">
                             <div class="row justify-content-center">
-                                <div class="col-md-8">
+                                <div class="col-xl-8 col-lg-12">
                                     <div class="filter-content row">
                                         <div class="col-lg-4 col-md-6 mix portfolio_box website" data-order="1">
+                                            <a href="#" class="link_box"></a>
                                             <img src="assets/img/portfolio/alimen.jpg" alt="alimen.jpg" loding="lazy" class="img-fluid" />
                                             <h4 class="project_title">
                                                 Alimny
@@ -272,18 +274,21 @@
                                         </div>
 
                                         <div class="col-lg-4 col-md-6 mix portfolio_box web_aplication" data-order="1">
+                                               <a href="#" class="link_box"></a>
                                             <img src="assets/img/portfolio/dachbored.jpg" alt="dachbored.jpg" loding="lazy" class="img-fluid" />
                                             <h4 class="project_title">
                                                 dachbored
                                             </h4>
                                         </div>
                                         <div class="col-lg-4 col-md-6 mix portfolio_box investor" data-order="1">
+                                            <a href="#" class="link_box"></a>
                                             <img src="assets/img/portfolio/faceDitiction.jpg" alt="faceDitiction.jpg" loding="lazy" class="img-fluid" />
                                             <h4 class="project_title">
                                                 Alimny
                                             </h4>
                                         </div>
                                         <div class="col-lg-4 col-md-6 mix portfolio_box design" data-order="1">
+                                               <a href="#" class="link_box"></a>
                                             <img src="assets/img/portfolio/moon.png" alt="moon.png" loding="lazy" class="img-fluid" />
                                             <h4 class="project_title">
                                                 Alimny
@@ -298,55 +303,21 @@
             </div>
         </div>
 
-        <!-- popUp -->
-        <div class="pop_up" data-pop="">
-            <div class="pop_up_content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="tab_title">
-                            <h3 class="title">website</h3>
-                            <h4 class="sub_title"><span>Alimny</span></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="list_col">
-                            <h6 class="col-title">
-                                Information
-                            </h6>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-pager"></i> <span class="info_text">2</span></li>
-                                <li><i class="fab fa-github"></i> <a href="#" target="_black" class="info_text">GitHup</a></li>
-                                <li><i class="fas fa-link"></i> <a href="#" target="_black" class="info_text">Live Viwe</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="list_col">
-                            <h6 class="col-title">
-                                Pages
-                            </h6>
-                            <ul class="list-unstyled page_list">
-                                <li>
-                                    <a href="#" target="_black" class="info_text">Home <i class="fas fa-link"></i> </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_black" class="info_text">Home <i class="fas fa-link"></i> </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <iframe src="https://ez.dvtst.com/allemni/index.html" frameborder="0" style="width: 100%; height: 200px;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- popUp -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script

@@ -278,12 +278,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0 0 40px;
     button {
       background-color: rgba($dark_color2, 1);
       color: rgba($white_color, 1);
       border-radius: 30px;
-      margin: 0 10px;
+      margin:  10px;
       border: 0;
       font-size: 14px;
       font-weight: 550;
@@ -303,7 +304,11 @@
       z-index: 1;
       height: 250px;
       margin: 10px 0;
-      cursor: pointer;
+      .link_box {
+        position: absolute;
+        inset: 0;
+        z-index: 9999;
+      }
       &:hover {
         .project_title {
           opacity: 1;
@@ -340,6 +345,65 @@
         object-fit: cover;
         object-position: top;
         transition: 4s all linear;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .img_box {
+    text-align: center;
+    img {
+      margin: 0 auto 40px;
+      height: 250px;
+    }
+  }
+
+  .skills_box {
+    .sillks_content {
+      .skills-name {
+        .skills-p {
+          flex: 50%;
+        }
+      }
+    }
+  }
+  .experince_box {
+    .experince_list {
+      .experince_item {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .buttom_link {
+    &.port_box {
+      div {
+        max-width: 100%;
+        flex: 100%;
+      }
+    }
+  }
+  .experince_box {
+    .experince_list {
+      .experince_item {
+        ul li {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .profile_info {
+    .list {
+      ul {
+        li {
+          flex: 100%;
+          max-width: 100%;
+        }
       }
     }
   }
