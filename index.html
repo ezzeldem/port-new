@@ -20,7 +20,7 @@
             <nav>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#">
+                        <a data-tab="home">
                             <span class="text">
                                 Home
                             </span>
@@ -38,44 +38,72 @@
 
                         </a>
                     </li>
+                    <li>
+                        <a data-tab="about">
+                            <span class="text">
+                                About
+                            </span>
+                            <span class="icon_box">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 24px;">
+                                    <g>
+                                        <path
+                                            d="M16.14 12.33C17.28 11.24 18 9.71 18 8c0-3.31-2.69-6-6-6S6 4.69 6 8c0 1.71.72 3.24 1.86 4.33C3.52 13.05 0 14.94 0 18c0 4 1 4 12 4s12 0 12-4c0-3.06-3.52-4.95-7.86-5.67z">
+                                        </path>
+                                    </g>
+                                </svg>
+
+                            </span>
+
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
 
 
-        <div class="home_page">
-            <div class="container-fluid ">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md-5">
-                        <div class="img_box">
-                            <img src="assets/img/me.jpg" alt="img" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="about_intro_box">
-                            <div class="name_jop">
-                                <h1 class="name">
-                                    Ezz Elden Mohamed
-                                </h1>
-                                <h3 class="jop">
-                                    Front End Developer
-                                </h3>
+        <div class="tab_min_box">
+
+            <div class="home_page tab_box active" id="home">
+                <div class="login_layOut active     "></div>
+                <div class="container-fluid ">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md-5">
+                            <div class="img_box">
+                                <img src="assets/img/me.jpg" alt="img" class="img-fluid">
                             </div>
-                            <p class="intro_prag">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro architecto sunt
-                                veritatis quaerat eum nulla aspernatur labore fuga quisquam exercitationem voluptate
-                                culpa consequuntur, deserunt voluptatum provident rerum soluta doloribus.
-                            </p>
-                            <div class="buttom_link">
-                                <a href="#">
-                                    Contact With Me
-                                </a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="about_intro_box">
+                                <div class="name_jop">
+                                    <h1 class="name">
+                                        Ezz Elden Mohamed
+                                    </h1>
+                                    <h3 class="jop">
+                                        Front End Developer
+                                    </h3>
+                                </div>
+                                <p class="intro_prag">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro architecto sunt
+                                    veritatis quaerat eum nulla aspernatur labore fuga quisquam exercitationem voluptate
+                                    culpa consequuntur, deserunt voluptatum provident rerum soluta doloribus.
+                                </p>
+                                <div class="buttom_link">
+                                    <a href="#">
+                                        Contact With Me
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+            <div class="tab_box" id="about">About <div class="login_layOut"></div>
+            </div>
+
         </div>
+
 
 
 

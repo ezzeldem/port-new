@@ -19,11 +19,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
 }
 
 .nav_box nav ul li a:hover .icon_box, .nav_box nav ul li a.active .icon_box {
   background-color: #fca311;
-  border-radius: 0 30px  30px 0;
+}
+
+.nav_box nav ul li a:hover .icon_box:after, .nav_box nav ul li a.active .icon_box:after {
+  opacity: 1;
 }
 
 .nav_box nav ul li a:hover .text, .nav_box nav ul li a.active .text {
@@ -51,6 +58,7 @@
 }
 
 .nav_box nav ul li a .icon_box {
+  z-index: 1;
   border-radius: 50%;
   display: block;
   width: 50px;
@@ -65,6 +73,17 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #2b2a2a;
+  position: relative;
+}
+
+.nav_box nav ul li a .icon_box:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #fca311;
+  opacity: 0;
+  border-radius: 0 50%  50% 0;
+  z-index: -1;
 }
 
 .nav_box nav ul li a .icon_box svg {
@@ -73,9 +92,7 @@
 }
 
 .home_page {
-  padding: 40px;
   overflow: hidden;
-  height: 100vh;
   position: relative;
   z-index: 1;
 }
@@ -190,6 +207,33 @@
           transform: scale(0);
 }
 
+.tab_min_box .tab_box {
+  position: relative;
+  display: none;
+  padding: 40px;
+  height: 100vh;
+}
+
+.tab_min_box .tab_box .login_layOut {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: #2b2a2a;
+  z-index: 9999;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+.tab_min_box .tab_box .login_layOut.active {
+  height: 0;
+}
+
+.tab_min_box .tab_box.active {
+  display: block;
+}
+
 p,
 ul,
 h1,
@@ -212,14 +256,13 @@ a:hover {
 body {
   background-color: #111111;
   font-family: "Poppins",sans-serif;
-  padding: 0 60px 0 0;
 }
 
 svg {
   height: 20px;
 }
 
-.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .home_page .about_intro_box .buttom_link a, .home_page .about_intro_box .buttom_link a:after {
+.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .nav_box nav ul li a .icon_box:after, .home_page .about_intro_box .buttom_link a, .home_page .about_intro_box .buttom_link a:after {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
