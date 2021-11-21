@@ -83,13 +83,18 @@
   .tab_min_box {
     padding: 0 0 74px !important;
   }
+  .tab_min_box {
+    .tab_box {
+      height: 100% !important ;
+    }
+  }
   .nav_box {
     top: unset;
     transform: unset;
     bottom: 0;
     width: 100%;
     left: 0;
-    padding: 0px ​10px 10p;
+    padding: 0px 10px 20px;
     background-color: rgba($dark_color2, 1);
     nav {
       width: 100%;
