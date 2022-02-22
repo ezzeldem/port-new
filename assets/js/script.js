@@ -10,6 +10,10 @@
     setTimeout(function () {
       $(".tab_min_box .tab_box.active .login_layOut").addClass("active");
     }, 800);
+    $("html, body").animate({
+      scrollTop: $('body').offset().top,
+    }
+      , 0);
   });
 
   // fillter
