@@ -228,12 +228,19 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .order_m {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
+  .buttom_link a {
+    padding: 10px 26px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 768px) {
   .home_page::after {
     display: none;
   }
