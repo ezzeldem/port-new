@@ -6,7 +6,7 @@ const app = Vue.createApp({
         { name: "dachbored", url: "https://color-dachbored.vercel.app/", img: "assets/img/portfolio/dachbored.jpg", class: " filter-webapplication" },
         { name: "face-ditaction", url: "https://face-ditaction.vercel.app/", img: "assets/img/portfolio/faceDitiction.jpg", class: " filter-webapplication" },
         { name: "round-base", url: "https://round-base-three.vercel.app/", img: "assets/img/portfolio/round-base.png", class: " filter-webapplication" },
-        { name: "moon-two", url: "https://moon-two.vercel.app/", img: "assets/img/portfolio/moon.png", class: " filter-webapplication" },
+        { name: "moon-two", url: "https://moon-two.vercel.app/", img: "assets/img/portfolio/moon.png", class: " filter-website" },
         { name: "elkebash", url: "http://ezwp.dvtst.com/elkebash", img: "assets/img/portfolio/elkepash.jpg", class: " filter-website filter-webdesign" },
         { name: "khozamnew", url: "https://khozamnew.netlify.app", img: "assets/img/portfolio/khozam.jpg", class: "  filter-website" },
         { name: "arm", url: "https://arm-five.vercel.app/", img: "assets/img/portfolio/arm.png", class: "  filter-webapplication filter-webdesign" },
