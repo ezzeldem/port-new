@@ -137,23 +137,6 @@
   }
 }
 
-@media (max-width: 552px) {
-  .home_page {
-    .about_intro_box {
-      .name_jop {
-        .name {
-          font-size: 24px;
-        }
-        .jop {
-          font-size: 20px;
-        }
-      }
-      .intro_prag {
-        font-size: 14px;
-      }
-    }
-  }
-}
 
 @media (max-width: 992px) {
   .home_page {
@@ -162,7 +145,7 @@
     }
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 552px) {
   .home_page {
     .about_intro_box {
       padding: 0;

@@ -298,25 +298,13 @@
   }
 }
 
-@media (max-width: 552px) {
-  .home_page .about_intro_box .name_jop .name {
-    font-size: 24px;
-  }
-  .home_page .about_intro_box .name_jop .jop {
-    font-size: 20px;
-  }
-  .home_page .about_intro_box .intro_prag {
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 992px) {
   .home_page .about_intro_box {
     padding: 50px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 552px) {
   .home_page .about_intro_box {
     padding: 0;
   }
@@ -333,7 +321,7 @@
 }
 
 .tab_min_box .tab_box .login_layOut {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 100vh;
   left: 0;
