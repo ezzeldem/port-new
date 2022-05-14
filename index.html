@@ -25,6 +25,7 @@
                             <span class="icon_box">
                                 <i class="fas fa-home"></i>
                             </span>
+                        </a>
                     </li>
                     <li>
                         <a data-tab="about">
@@ -355,18 +356,18 @@
                     </div>
                     <div class="col-xl-8 col-lg-12">
                         <div class="row filter-content" id="projects_id">
-                        <div v-for="project in projects"
-                            :class="`col-lg-4 col-md-6 mix portfolio_box ${project.class}`">
-                            <a :href="project.url" target="_black" class="link_box">
-                                <i class="fa fa-link" aria-hidden="true"></i>
-                            </a>
-                            <img :src="project.img" alt="project.name" loding="lazy" class="img-fluid" />
+                            <div v-for="project in projects"
+                                :class="`col-lg-4 col-md-6 mix portfolio_box ${project.class}`">
+                                <a :href="project.url" target="_black" class="link_box">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                                <img :src="project.img" alt="project.name" loding="lazy" class="img-fluid" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>

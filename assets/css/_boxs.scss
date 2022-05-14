@@ -11,16 +11,14 @@
         .sub_title {
           text-transform: capitalize;
           color: rgba($white_color, 0.8);
-        
         }
         .title {
           color: rgba($white_color, 1);
           font-weight: 600;
           @extend%trans_4;
-          &:hover{
+          &:hover {
             color: rgba($gold_color, 1);
-          
-        }
+          }
         }
       }
     }
@@ -372,9 +370,7 @@
 
 @media (max-width: 768px) {
   .img_box {
-    text-align: center;
     img {
-      margin: 0 auto 40px;
       height: 250px;
     }
   }
@@ -402,6 +398,42 @@
   }
 }
 
+@media (max-width: 992px) {
+  .img_box {
+    text-align: center;
+    img {
+      margin: 0 auto 40px;
+      height: 400px;
+    }
+  }
+
+  .skills_box {
+    .sillks_content {
+      .skills-name {
+        .skills-p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .experince_box {
+    .experince_list {
+      .experince_item {
+        p {
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        ul {
+          li {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 552px) {
   .buttom_link {
     &.port_box {
@@ -412,16 +444,7 @@
       }
     }
   }
-  .experince_box {
-    .experince_list {
-      .experince_item {
-        ul li {
-          flex: 100%;
-          max-width: 100%;
-        }
-      }
-    }
-  }
+
   .profile_info {
     .list {
       ul {
