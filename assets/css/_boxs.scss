@@ -16,8 +16,13 @@
           color: rgba($white_color, 1);
           font-weight: 600;
           @extend%trans_4;
-          &:hover {
-            color: rgba($gold_color, 1);
+          &:is(a) {
+            &:hover {
+              color: rgba($gold_color, 1);
+            }
+          }
+          &:not(a) {
+            cursor: default;
           }
         }
       }
@@ -191,6 +196,7 @@
         flex: 25%;
         font-weight: 600;
         margin-bottom: 10px;
+        cursor: default;
         color: rgba($white_color, 0.8);
       }
     }

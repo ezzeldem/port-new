@@ -367,8 +367,12 @@
   font-weight: 600;
 }
 
-.profile_info .list ul li .title:hover {
+.profile_info .list ul li .title:is(a):hover {
   color: #fca311;
+}
+
+.profile_info .list ul li .title:not(a) {
+  cursor: default;
 }
 
 .buttom_link {
@@ -600,6 +604,7 @@
           flex: 25%;
   font-weight: 600;
   margin-bottom: 10px;
+  cursor: default;
   color: rgba(255, 255, 255, 0.8);
 }
 
