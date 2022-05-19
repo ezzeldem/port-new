@@ -5,7 +5,7 @@
   right: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: 9;
+  z-index: 999999999;
 }
 
 .nav_box nav ul li {
@@ -185,7 +185,7 @@
 }
 
 .home_page .about_intro_box {
-  padding: 0 96px;
+  padding: 0 75px 0 60px;
 }
 
 .home_page .about_intro_box .name_jop {
@@ -204,14 +204,14 @@
 }
 
 .home_page .about_intro_box .name_jop .name {
-  font-size: 51px;
+  font-size: 40px;
   line-height: 62px;
   font-weight: 700;
   color: #fca311;
 }
 
 .home_page .about_intro_box .name_jop .jop {
-  font-size: 51px;
+  font-size: 30px;
   line-height: 56px;
   font-weight: 600;
   color: white;
@@ -219,13 +219,13 @@
 
 .home_page .about_intro_box .intro_prag {
   margin: 15px 0 28px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 35px;
   color: white;
   width: 90%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .home_page .about_intro_box {
     padding: 0;
   }
@@ -237,6 +237,24 @@
   }
   .home_page .about_intro_box .name_jop .jop {
     font-size: 30px;
+  }
+  .home_page .about_intro_box .intro_prag {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .home_page .about_intro_box {
+    padding: 0;
+  }
+  .home_page .about_intro_box .name_jop {
+    padding: 0 0 0 80px;
+  }
+  .home_page .about_intro_box .name_jop .name {
+    font-size: 34px;
+  }
+  .home_page .about_intro_box .name_jop .jop {
+    font-size: 28px;
   }
   .home_page .about_intro_box .intro_prag {
     font-size: 14px;
@@ -308,8 +326,15 @@
   .home_page .about_intro_box {
     padding: 0;
   }
+  .home_page .about_intro_box .name_jop .name {
+    font-size: 30px;
+  }
+  .home_page .about_intro_box .name_jop .jop {
+    font-size: 22px;
+  }
   .home_page .about_intro_box .intro_prag {
     text-align: justify;
+    line-height: 30px;
   }
 }
 
@@ -697,6 +722,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 18px 0 0;
 }
 
 .experince_box .experince_list .experince_item ul li {
@@ -706,6 +732,10 @@
   max-width: 40%;
   margin: 4px 10px;
   list-style: disc;
+  color: #fca311;
+}
+
+.experince_box .experince_list .experince_item ul li:hover {
   color: rgba(252, 163, 17, 0.8);
 }
 
@@ -997,7 +1027,7 @@ hr.separator {
   }
 }
 
-.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .nav_box nav ul li a .icon_box:after, .profile_info .list ul li .title, .buttom_link a, .buttom_link a:after, .sochile_box, .sochile_box:after, .sochile_box .social_links, .sochile_box .social_links a, .portfolio_tab .portfolio_filter_button_box button, .portfolio_tab .filter-content .portfolio_box .link_box i, .portfolio_tab .filter-content .portfolio_box::after, .portfolio_tab .filter-content .portfolio_box .project_title {
+.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .nav_box nav ul li a .icon_box:after, .profile_info .list ul li .title, .buttom_link a, .buttom_link a:after, .sochile_box, .sochile_box:after, .sochile_box .social_links, .sochile_box .social_links a, .experince_box .experince_list .experince_item ul li, .portfolio_tab .portfolio_filter_button_box button, .portfolio_tab .filter-content .portfolio_box .link_box i, .portfolio_tab .filter-content .portfolio_box::after, .portfolio_tab .filter-content .portfolio_box .project_title {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }

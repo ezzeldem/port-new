@@ -268,12 +268,17 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        margin: 18px 0 0;
         li {
           flex: 0 0 40%;
           max-width: 40%;
           margin: 4px 10px;
           list-style: disc;
-          color: rgba($gold_color, 0.8);
+          color: rgba($gold_color, 1);
+          @extend%trans_4;
+          &:hover {
+            color: rgba($gold_color, 0.8);
+          }
           a {
             color: inherit;
           }
