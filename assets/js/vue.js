@@ -4,6 +4,7 @@ const app = Vue.createApp({
       projects: [
         { name: "alemnishokran", url: "https://alemnishokran.vercel.app/", img: "assets/img/portfolio/alimen.jpg", class: " filter-website" },
         { name: "dachbored", url: "https://color-dachbored.vercel.app/", img: "assets/img/portfolio/dachbored.jpg", class: " filter-webapplication" },
+        { name: "find-you", url: "https://find-you.vercel.app/https://face-ditaction.vercel.app/", img: "assets/img/portfolio/find-you.jpg", class: "filter-websiteVue" },
         { name: "face-ditaction", url: "https://face-ditaction.vercel.app/", img: "assets/img/portfolio/faceDitiction.jpg", class: " filter-webapplication" },
         { name: "round-base", url: "https://round-base-three.vercel.app/", img: "assets/img/portfolio/round-base.png", class: " filter-webapplication" },
         { name: "moon-two", url: "https://moon-two.vercel.app/", img: "assets/img/portfolio/moon.png", class: " filter-website" },
