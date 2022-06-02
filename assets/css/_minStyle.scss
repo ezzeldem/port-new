@@ -155,7 +155,9 @@ hr.separator {
   .tab_title {
     padding: 20px 0;
     .title {
-      font-size: 54px;
+      top: 8px;
+      transform: unset;
+      font-size: 30px;
     }
     .sub_title {
       font-size: 36px;

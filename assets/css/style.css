@@ -133,7 +133,7 @@
             justify-content: space-between;
   }
   .nav_box nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
   }
   .nav_box nav ul li a {
     -webkit-box-shadow: 0 0 8px #2f2e41;
@@ -1092,7 +1092,10 @@ hr.separator {
     padding: 20px 0;
   }
   .tab_title .title {
-    font-size: 54px;
+    top: 8px;
+    -webkit-transform: unset;
+            transform: unset;
+    font-size: 30px;
   }
   .tab_title .sub_title {
     font-size: 36px;
@@ -1102,6 +1105,166 @@ hr.separator {
 @media (max-width: 360px) {
   .sochile_box {
     font-size: 12px;
+  }
+}
+
+.contactForm {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(229, 229, 229, 0.1);
+  margin: 0 0 80px;
+}
+
+.contactForm .form-group {
+  padding: 20px 0;
+}
+
+.contactForm .form-group label {
+  margin: 0 0 8px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(229, 229, 229, 0.8);
+  text-transform: capitalize;
+}
+
+.contactForm .form-group .input_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(229, 229, 229, 0.2);
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.contactForm .form-group .input_box label {
+  margin: 0;
+}
+
+.contactForm .form-group .input_box i {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block !important;
+  padding: 0 10px 0 0;
+  margin: 0 10px 0 0;
+  border-right: 1px solid rgba(229, 229, 229, 0.2);
+}
+
+.contactForm .form-group input {
+  background: transparent;
+  width: 80%;
+  padding: 7px 0;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.contactForm .form-group input:focus {
+  outline: none;
+}
+
+.contactForm .form-group textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  color: white;
+  border: 1px solid rgba(229, 229, 229, 0.2);
+  background: transparent;
+}
+
+.contactForm .form-group textarea:focus {
+  outline: none;
+}
+
+.contactForm .sendButton {
+  font-size: 20px;
+  color: black;
+  padding: 8px 40px;
+  background-color: #fca311;
+  border-radius: 10px;
+  border: 1px solid #fca311;
+  font-weight: 400;
+  -webkit-box-shadow: rgba(252, 163, 17, 0.3) 4px 4px 0px;
+          box-shadow: rgba(252, 163, 17, 0.3) 4px 4px 0px;
+  -webkit-transition: -webkit-transform 200ms, -webkit-box-shadow 200ms;
+  transition: -webkit-transform 200ms, -webkit-box-shadow 200ms;
+  transition: transform 200ms, box-shadow 200ms;
+  transition: transform 200ms, box-shadow 200ms, -webkit-transform 200ms, -webkit-box-shadow 200ms;
+}
+
+.contactForm .sendButton:active {
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+  -webkit-box-shadow: rgba(252, 163, 17, 0.3) 0px 0px 0px;
+          box-shadow: rgba(252, 163, 17, 0.3) 0px 0px 0px;
+}
+
+@media (max-width: 772px) {
+  .contactForm {
+    padding: 20px;
+    margin: 0 0 80px;
+  }
+  .contactForm .form-group {
+    padding: 20px 0;
+  }
+  .contactForm .form-group label {
+    margin: 0 0 8px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(229, 229, 229, 0.8);
+    text-transform: capitalize;
+  }
+  .contactForm .form-group .input_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid rgba(229, 229, 229, 0.2);
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+  .contactForm .form-group .input_box label {
+    margin: 0;
+  }
+  .contactForm .form-group .input_box i {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block !important;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+    border-right: 1px solid rgba(229, 229, 229, 0.2);
+  }
+  .contactForm .form-group input {
+    background: transparent;
+    width: 80%;
+    padding: 7px 0;
+    outline: none;
+    border: none;
+    color: white;
+  }
+  .contactForm .form-group input:focus {
+    outline: none;
+  }
+  .contactForm .form-group textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    color: white;
+    border: 1px solid rgba(229, 229, 229, 0.2);
+    background: transparent;
+  }
+  .contactForm .form-group textarea:focus {
+    outline: none;
+  }
+  .contactForm .sendButton {
+    font-size: 16px;
+    padding: 8px 40px;
   }
 }
 

@@ -1,6 +1,10 @@
 const app = Vue.createApp({
   data() {
     return {
+      name: "",
+      email: "",
+      jop: "",
+      phone: "",
       projects: [
         { name: "alemnishokran", url: "https://alemnishokran.vercel.app/", img: "assets/img/portfolio/alimen.jpg", class: " filter-website" },
         { name: "dachbored", url: "https://color-dachbored.vercel.app/", img: "assets/img/portfolio/dachbored.jpg", class: " filter-webapplication" },
@@ -36,9 +40,61 @@ const app = Vue.createApp({
         { name: "non-profit", url: "https://nonprofit-one.vercel.app/", img: "assets/img/portfolio/non.jpg", class: " filter-website" },
       ]
     }
+  },
+  methods: {
+    logg() {
+      console.log(this.name);
+    }
   }
 });
 
 
 
 app.mount("#projects_id")
+
+
+
+const contactApp = Vue.createApp({
+  data() {
+    return {
+      name: "",
+      email: "",
+      jop: "",
+      phone: "",
+      message: "",
+    }
+  },
+  methods: {
+    callMeFu() {
+      fetch('https://meport-22366-default-rtdb.firebaseio.com/contact.json',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: this.name,
+            email: this.email,
+            jop: this.jop,
+            phone: this.phone,
+            message: this.message,
+          }),
+        }
+      )
+        .then((response) => {
+          if (response.ok) {
+            // ...
+          } else {
+            throw new Error('faild to send data ');
+          }
+        })
+        .catch(() => {
+          this.error = 'faild to send data ';
+        });
+    }
+  }
+});
+
+
+
+contactApp.mount("#contactMe")
