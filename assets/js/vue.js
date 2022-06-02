@@ -96,8 +96,7 @@ const contactApp = Vue.createApp({
         this.email = "",
         this.phone = "",
         this.jop = "",
-        this.message = "",
-
+        this.message = ""
       }
   }
 });
