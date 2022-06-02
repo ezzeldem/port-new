@@ -62,6 +62,7 @@ const contactApp = Vue.createApp({
       jop: "",
       phone: "",
       message: "",
+      isValed: true
     }
   },
   methods: {
@@ -92,12 +93,16 @@ const contactApp = Vue.createApp({
           this.error = 'faild to send data ';
         });
 
-        this.name = "",
+      this.name = "",
         this.email = "",
         this.phone = "",
         this.jop = "",
-        this.message = ""
-      }
+        this.message = "",
+        this.isValed = false
+    },
+    newmassege() {
+      this.isValed = true;
+    }
   }
 });
 

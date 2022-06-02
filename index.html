@@ -383,7 +383,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab_box portfolio_tab" id="contactMe">
+            <div class="tab_box portfolio_tab " id="contactMe">
                 <div class="login_layOut">
 
 
@@ -398,58 +398,76 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-10 col-md-12">
                             <div class="row">
-                                <form @submit.prevent="callMeFu" class="contactForm">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="name">Name *</label>
-                                                <div class="input_box">
-                                                    <label for="name">
-                                                        <i for="name" class="fas fa-h-square"></i></label>
-                                                    <input required v-model.trim="name" type="text" for="name" id="name" name="name">
+                                <div class="col-md-12">
+                                    <div class="form_box">
+                                        <form @submit.prevent="callMeFu" class="contactForm" v-if="isValed">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="name">Name *</label>
+                                                        <div class="input_box">
+                                                            <label for="name">
+                                                                <i for="name" class="fas fa-h-square"></i></label>
+                                                            <input required v-model.trim="name" type="text" for="name"
+                                                                id="name" name="name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="email">Email *</label>
+                                                        <div class="input_box">
+                                                            <label for="email"><i class="fas fa-envelope"></i></label>
+                                                            <input required v-model="email" type="email" for="email"
+                                                                id="email" name="email">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="jop">Jop Title *</label>
+                                                        <div class="input_box">
+                                                            <label for="jop"><i class="fas fa-briefcase"></i></label>
+                                                            <input required v-model="jop" type="text" for="jop" id="jop"
+                                                                name="jop">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="phone">Phone Number *</label>
+                                                        <div class="input_box">
+                                                            <label for="phone"> <i class="fas fa-phone-alt"></i></label>
+                                                            <input required v-model="phone" type="text" for="phone"
+                                                                id="phone" name="phone">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="message">message</label>
+                                                        <textarea v-model="message" name="message" id="message"
+                                                            cols="30" rows="10"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button class="sendButton"> Send <i
+                                                            class="fas fa-paper-plane"></i></button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="email">Email  *</label>
-                                                <div class="input_box">
-                                                    <label for="email"><i class="fas fa-envelope"></i></label>
-                                                    <input required v-model="email" type="email" for="email" id="email"
-                                                        name="email">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="jop">Jop Title  *</label>
-                                                <div class="input_box">
-                                                    <label for="jop"><i class="fas fa-briefcase"></i></label>
-                                                    <input required v-model="jop" type="text" for="jop" id="jop" name="jop">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="phone">Phone Number  *</label>
-                                                <div class="input_box">
-                                                    <label for="phone"> <i class="fas fa-phone-alt"></i></label>
-                                                    <input required v-model="phone" type="text" for="phone" id="phone"
-                                                        name="phone">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="message">message</label>
-                                                <textarea v-model="message" name="message" id="message" cols="30" rows="10"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <button class="sendButton"> Send <i class="fas fa-paper-plane"></i></button>
+                                        </form>
+                                        <div class="thankBox" v-else>
+                                            <h5>
+                                                Thanlk You For Your Messege 🤍
+                                            </h5>
+                                            <p class="prag">
+                                                I Received It
+                                                be sure your message is important for me
+                                            </p>
+                                            <span @click="newmassege" class="newmassege">New Message</span>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

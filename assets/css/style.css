@@ -1108,18 +1108,18 @@ hr.separator {
   }
 }
 
-.contactForm {
+.form_box {
   padding: 30px;
   border-radius: 10px;
   border: 1px solid rgba(229, 229, 229, 0.1);
   margin: 0 0 80px;
 }
 
-.contactForm .form-group {
+.form_box .contactForm .form-group {
   padding: 20px 0;
 }
 
-.contactForm .form-group label {
+.form_box .contactForm .form-group label {
   margin: 0 0 8px;
   display: block;
   font-size: 16px;
@@ -1128,7 +1128,7 @@ hr.separator {
   text-transform: capitalize;
 }
 
-.contactForm .form-group .input_box {
+.form_box .contactForm .form-group .input_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1140,11 +1140,11 @@ hr.separator {
   border-radius: 10px;
 }
 
-.contactForm .form-group .input_box label {
+.form_box .contactForm .form-group .input_box label {
   margin: 0;
 }
 
-.contactForm .form-group .input_box i {
+.form_box .contactForm .form-group .input_box i {
   color: rgba(255, 255, 255, 0.6);
   display: inline-block !important;
   padding: 0 10px 0 0;
@@ -1152,7 +1152,7 @@ hr.separator {
   border-right: 1px solid rgba(229, 229, 229, 0.2);
 }
 
-.contactForm .form-group input {
+.form_box .contactForm .form-group input {
   background: transparent;
   width: 80%;
   padding: 7px 0;
@@ -1161,11 +1161,11 @@ hr.separator {
   color: white;
 }
 
-.contactForm .form-group input:focus {
+.form_box .contactForm .form-group input:focus {
   outline: none;
 }
 
-.contactForm .form-group textarea {
+.form_box .contactForm .form-group textarea {
   width: 100%;
   border-radius: 10px;
   padding: 10px;
@@ -1175,11 +1175,11 @@ hr.separator {
   background: transparent;
 }
 
-.contactForm .form-group textarea:focus {
+.form_box .contactForm .form-group textarea:focus {
   outline: none;
 }
 
-.contactForm .sendButton {
+.form_box .contactForm .sendButton {
   font-size: 20px;
   color: black;
   padding: 8px 40px;
@@ -1195,11 +1195,34 @@ hr.separator {
   transition: transform 200ms, box-shadow 200ms, -webkit-transform 200ms, -webkit-box-shadow 200ms;
 }
 
-.contactForm .sendButton:active {
+.form_box .contactForm .sendButton:active {
   -webkit-transform: translate(4px, 4px);
           transform: translate(4px, 4px);
   -webkit-box-shadow: rgba(252, 163, 17, 0.3) 0px 0px 0px;
           box-shadow: rgba(252, 163, 17, 0.3) 0px 0px 0px;
+}
+
+.form_box .thankBox {
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.form_box .thankBox h5 {
+  font-size: 20px;
+  color: white;
+}
+
+.form_box .thankBox .prag {
+  font-size: 18px;
+  padding: 20px 0 50px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form_box .thankBox .newmassege {
+  color: #fca311;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 @media (max-width: 772px) {

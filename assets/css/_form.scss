@@ -1,83 +1,102 @@
-.contactForm {
+.form_box {
   padding: 30px;
   border-radius: 10px;
   border: 1px solid rgba($gray_color, 0.1);
   margin: 0 0 80px;
-  .form-group {
-    padding: 20px 0;
-    label {
-      margin: 0 0 8px;
-      display: block;
-      font-size: 16px;
-      font-weight: 400;
-      color: rgba($gray_color, 0.8);
-      text-transform: capitalize;
-    }
-    .input_box {
-      display: flex;
-      align-items: center;
-      border: 1px solid rgba($gray_color, 0.2);
-      padding: 0 10px;
-      border-radius: 10px;
+  .contactForm {
+    .form-group {
+      padding: 20px 0;
       label {
-        margin: 0;
+        margin: 0 0 8px;
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba($gray_color, 0.8);
+        text-transform: capitalize;
       }
-      i {
-        color: rgba($white_color, 0.6);
-        display: inline-block !important;
-        padding: 0 10px 0 0;
-        margin: 0 10px 0 0;
-        border-right: 1px solid rgba($gray_color, 0.2);
+      .input_box {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba($gray_color, 0.2);
+        padding: 0 10px;
+        border-radius: 10px;
+        label {
+          margin: 0;
+        }
+        i {
+          color: rgba($white_color, 0.6);
+          display: inline-block !important;
+          padding: 0 10px 0 0;
+          margin: 0 10px 0 0;
+          border-right: 1px solid rgba($gray_color, 0.2);
+        }
       }
-    }
-    input {
-      background: transparent;
-      width: 80%;
-      padding: 7px 0;
-      outline: none;
-      border: none;
-      color: rgba($white_color, 1);
-      &:focus {
+      input {
+        background: transparent;
+        width: 80%;
+        padding: 7px 0;
         outline: none;
+        border: none;
+        color: rgba($white_color, 1);
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        outline: none;
+        color: rgba($white_color, 1);
+        border: 1px solid rgba($gray_color, 0.2);
+        background: transparent;
+        &:focus {
+          outline: none;
+        }
       }
     }
-    textarea {
-      width: 100%;
+    .sendButton {
+      font-size: 20px;
+      color: rgba($black_color, 1);
+      padding: 8px 40px;
+      background-color: rgba($gold_color, 1);
       border-radius: 10px;
-      padding: 10px;
-      outline: none;
-      color: rgba($white_color, 1);
-      border: 1px solid rgba($gray_color, 0.2);
-      background: transparent;
-      &:focus {
-        outline: none;
+      border: 1px solid rgba($gold_color, 1);
+      font-weight: 400;
+      // @extend%trans_4;
+      box-shadow: rgba($gold_color, 0.3) 4px 4px 0px;
+      transition: transform 200ms, box-shadow 200ms;
+      &:active {
+        transform: translate(4px, 4px);
+        box-shadow: rgba($gold_color, 0.3) 0px 0px 0px;
+      }
+      &:hover {
+        // color: rgba($gold_color, 1);
+        // background-color: transparent;
+        // border-color: rgba($gold_color, 0.1);
       }
     }
   }
-  .sendButton {
-    font-size: 20px;
-    color: rgba($black_color, 1);
-    padding: 8px 40px;
-    background-color: rgba($gold_color, 1);
-    border-radius: 10px;
-    border: 1px solid rgba($gold_color, 1);
-    font-weight: 400;
-    // @extend%trans_4;
-    box-shadow: rgba($gold_color, .3) 4px 4px 0px;
-    transition: transform 200ms, box-shadow 200ms;
-    &:active {
-      transform: translate(4px, 4px);
-      box-shadow: rgba($gold_color, .3) 0px 0px 0px;
+  .thankBox {
+    text-align: center;
+    padding: 40px 10px;
+    h5 {
+      font-size: 20px;
+      color: rgba($white_color, 1);
     }
-    &:hover {
-      // color: rgba($gold_color, 1);
-      // background-color: transparent;
-      // border-color: rgba($gold_color, 0.1);
+    .prag {
+      font-size: 18px;
+      padding: 20px 0 50px;
+      color: rgba($white_color, 0.6);
+    }
+    .newmassege {
+      color: rgba($gold_color, 1);
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
     }
   }
 }
-
-
 
 @media (max-width: 772px) {
   .contactForm {
@@ -137,8 +156,6 @@
     .sendButton {
       font-size: 16px;
       padding: 8px 40px;
-
     }
   }
-  
 }
