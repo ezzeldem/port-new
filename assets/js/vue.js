@@ -91,7 +91,14 @@ const contactApp = Vue.createApp({
         .catch(() => {
           this.error = 'faild to send data ';
         });
-    }
+
+        this.name = "",
+        this.email = "",
+        this.phone = "",
+        this.jop = "",
+        this.message = "",
+
+      }
   }
 });
 
