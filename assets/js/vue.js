@@ -8,11 +8,12 @@ const app = Vue.createApp({
       projects: [
         { name: "alemnishokran", url: "https://alemnishokran.vercel.app/", img: "assets/img/portfolio/alimen.jpg", class: " filter-website" },
         { name: "dachbored", url: "https://color-dachbored.vercel.app/", img: "assets/img/portfolio/dachbored.jpg", class: " filter-webapplication" },
-        { name: "find-you", url: "https://find-you.vercel.app/https://face-ditaction.vercel.app/", img: "assets/img/portfolio/find-you.jpg", class: "filter-websiteVue" },
-        { name: "face-ditaction", url: "https://face-ditaction.vercel.app/", img: "assets/img/portfolio/faceDitiction.jpg", class: " filter-webapplication" },
-        { name: "round-base", url: "https://round-base-three.vercel.app/", img: "assets/img/portfolio/round-base.png", class: " filter-webapplication" },
-        { name: "moon-two", url: "https://moon-two.vercel.app/", img: "assets/img/portfolio/moon.png", class: " filter-website" },
         { name: "elkebash", url: "http://ezwp.dvtst.com/elkebash", img: "assets/img/portfolio/elkepash.jpg", class: " filter-website filter-webdesign" },
+        { name: "find-you", url: "https://find-you.vercel.app/https://face-ditaction.vercel.app/", img: "assets/img/portfolio/find-you.jpg", class: "filter-websiteVue" },
+        { name: "round-base", url: "https://round-base-three.vercel.app/", img: "assets/img/portfolio/round-base.png", class: " filter-webapplication" },
+        { name: "dOOGarnala", url: "https://doog-arnala-bpky4yuvz-ezzeldem.vercel.app/", img: "assets/img/portfolio/DOOGarnala.jpg", class: "filter-website" },
+        { name: "face-ditaction", url: "https://face-ditaction.vercel.app/", img: "assets/img/portfolio/faceDitiction.jpg", class: " filter-webapplication"},
+        { name: "moon-two", url: "https://moon-two.vercel.app/", img: "assets/img/portfolio/moon.png", class: " filter-website" },
         { name: "myBlog", url: "https://my-blog-gamma.vercel.app/", img: "assets/img/portfolio/myBlog.jpg", class: " filter-website filter-webdesign" },
         { name: "mariamtest", url: "https://mariam-lyart.vercel.app/", img: "assets/img/portfolio/mariam.jpg", class: " filter-website filter-webdesign" },
         { name: "khozamnew", url: "https://khozamnew.netlify.app", img: "assets/img/portfolio/khozam.jpg", class: "  filter-website" },
@@ -39,11 +40,6 @@ const app = Vue.createApp({
         { name: "makhazen", url: "https://makhazen.vercel.app", img: "assets/img/portfolio/makhazen.jpg", class: " filter-website" },
         { name: "non-profit", url: "https://nonprofit-one.vercel.app/", img: "assets/img/portfolio/non.jpg", class: " filter-website" },
       ]
-    }
-  },
-  methods: {
-    logg() {
-      console.log(this.name);
     }
   }
 });
