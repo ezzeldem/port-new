@@ -131,8 +131,10 @@ hr.separator {
     text-transform: uppercase;
     z-index: 2;
     position: relative;
+    @extend%whiteSelection ;
     span {
       color: rgba($gold_color, 1);
+      @extend%goldSelection ;
     }
   }
 }
@@ -170,3 +172,6 @@ hr.separator {
     font-size: 12px;
   }
 }
+
+
+

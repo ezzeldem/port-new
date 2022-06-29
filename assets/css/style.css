@@ -225,6 +225,16 @@
   width: 90%;
 }
 
+.home_page .about_intro_box .intro_prag::-moz-selection {
+  color: #fca311;
+  background-color: black;
+}
+
+.home_page .about_intro_box .intro_prag::selection {
+  color: #fca311;
+  background-color: black;
+}
+
 @media (max-width: 1200px) {
   .home_page .about_intro_box {
     padding: 0;
@@ -1294,4 +1304,24 @@ hr.separator {
 .nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .nav_box nav ul li a .icon_box:after, .profile_info .list ul li .title, .buttom_link a, .buttom_link a:after, .sochile_box, .sochile_box:after, .sochile_box .social_links, .sochile_box .social_links a, .experince_box .experince_list .experince_item ul li, .portfolio_tab .portfolio_filter_button_box button, .portfolio_tab .filter-content .portfolio_box .link_box i, .portfolio_tab .filter-content .portfolio_box::after, .portfolio_tab .filter-content .portfolio_box .project_title {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
+}
+
+.home_page .about_intro_box .name_jop .name::-moz-selection, .tab_title .sub_title span::-moz-selection {
+  color: black;
+  background-color: #fca311;
+}
+
+.home_page .about_intro_box .name_jop .name::selection, .tab_title .sub_title span::selection {
+  color: black;
+  background-color: #fca311;
+}
+
+.home_page .about_intro_box .name_jop .jop::-moz-selection, .tab_title .sub_title::-moz-selection {
+  color: #2b2a2a;
+  background-color: white;
+}
+
+.home_page .about_intro_box .name_jop .jop::selection, .tab_title .sub_title::selection {
+  color: #2b2a2a;
+  background-color: white;
 }
