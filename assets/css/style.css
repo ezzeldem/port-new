@@ -1073,12 +1073,12 @@ hr.separator {
   transition: 0.4s all ease-in-out;
 }
 
-.goldSelection::-moz-selection, .home_page .about_intro_box .name_jop .name::-moz-selection, .tab_title .sub_title span::-moz-selection {
+.goldSelection::-moz-selection, .home_page .about_intro_box .name_jop .name::-moz-selection, .skills_box .sillks_content .skills-name .skills-p::-moz-selection, .tab_title .sub_title span::-moz-selection {
   color: black;
   background-color: #fca311;
 }
 
-.goldSelection::selection, .home_page .about_intro_box .name_jop .name::selection, .tab_title .sub_title span::selection {
+.goldSelection::selection, .home_page .about_intro_box .name_jop .name::selection, .skills_box .sillks_content .skills-name .skills-p::selection, .tab_title .sub_title span::selection {
   color: black;
   background-color: #fca311;
 }
