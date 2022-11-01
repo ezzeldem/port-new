@@ -53,7 +53,6 @@
     var mixer = mixitup(".filter-content");
   }
 
-  $(".curserBox").addClass("show-cursor");
   var cursor = document.querySelector(".cursor");
   var cursor2 = document.querySelector(".cursor2");
 
@@ -62,3 +61,7 @@
       "left:" + e.clientX + "px; top:" + e.clientY + "px;";
   });
 })();
+
+$(document).ready(function () {
+  $(".curserBox").addClass("show-cursor");
+});
