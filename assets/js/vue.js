@@ -9,6 +9,7 @@ const app = Vue.createApp({
         { name: "alemnishokran", url: "https://alemnishokran.vercel.app/", img: "assets/img/portfolio/alimen.jpg", class: " filter-website" },
         { name: "dachbored", url: "https://color-dachbored.vercel.app/", img: "assets/img/portfolio/dachbored.jpg", class: " filter-webapplication" },
         { name: "elkebash", url: "http://ezwp.dvtst.com/elkebash", img: "assets/img/portfolio/elkepash.jpg", class: " filter-website filter-webdesign" },
+        { name: "elkebash", url: "https://he-store-shams.vercel.app/", img: "assets/img/portfolio/shams-store.png", class: " filter-website filter-webdesign" },
         { name: "round-base", url: "https://round-base-three.vercel.app/", img: "assets/img/portfolio/round-base.png", class: " filter-webapplication" },
         { name: "myBlog", url: "https://my-blog-gamma.vercel.app/", img: "assets/img/portfolio/myBlog.jpg", class: " filter-website filter-webdesign" },
         { name: "dOOGarnala", url: "https://doog-arnala-bpky4yuvz-ezzeldem.vercel.app/", img: "assets/img/portfolio/DOOGarnala.jpg", class: "filter-website" },

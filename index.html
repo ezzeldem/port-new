@@ -393,7 +393,7 @@
                                     <a :href="project.url" target="_black" class="link_box">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
-                                    <img :src="project.img" alt="project.name" loding="lazy" class="img-fluid" />
+                                    <img :src="project.img" alt="project.name" onerror="this.src='./assets/img/load-loading.gif'" loding="lazy" class="img-fluid" />
                                 </div>
                             </div>
                         </div>
