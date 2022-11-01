@@ -296,7 +296,18 @@
     line-height: 30px;
   }
 }
-.cursor {
+.curserBox {
+  z-index: 1000000000000000300000000;
+  position: relative;
+  transition: 0.01s;
+  opacity: 0;
+  visibility: hidden;
+}
+.curserBox.show-cursor {
+  opacity: 1;
+  visibility: visible;
+}
+.curserBox .cursor {
   width: 40px;
   height: 40px;
   border: 2px solid #fca311;
@@ -307,13 +318,14 @@
   z-index: 99999;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: 0.1s;
+  transition: 0.05s;
 }
-
-.cursor2 {
+.curserBox .cursor.white-box {
+  border-color: #111111;
+}
+.curserBox .cursor2 {
   width: 8px;
   height: 8px;
-  border: 1px solid #000;
   border-radius: 50%;
   position: fixed;
   left: 51.5%;
@@ -321,8 +333,15 @@
   transform: translate(-50%, -50%);
   z-index: 99999;
   pointer-events: none;
-  transition: 0.1 0.5s;
+  transition: 0.01s;
   background-color: white;
+}
+.curserBox .cursor2.big-box {
+  width: 14px;
+  height: 14px;
+}
+.curserBox .cursor2.gold-box {
+  background-color: #fca311;
 }
 
 .tab_min_box .tab_box {
