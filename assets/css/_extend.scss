@@ -3,13 +3,13 @@
   transition: 0.4s all ease-in-out;
 }
 
-%goldSelection {
+.goldSelection {
   &::selection {
     color: rgba($black_color, 1);
     background-color: rgba($gold_color, 1);
   }
 }
-%whiteSelection {
+.whiteSelection {
   &::selection {
     color: rgba($dark_color2, 1);
     background-color: rgba($white_color, 1);

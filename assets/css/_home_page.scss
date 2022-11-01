@@ -41,14 +41,14 @@
         line-height: 62px;
         font-weight: 700;
         color: rgba($gold_color, 1);
-        @extend%goldSelection ;
+        @extend .goldSelection;
       }
       .jop {
         font-size: 30px;
         line-height: 56px;
         font-weight: 600;
         color: rgba($white_color, 1);
-        @extend%whiteSelection ;
+        @extend .whiteSelection;
       }
     }
     .intro_prag {
