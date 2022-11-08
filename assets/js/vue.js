@@ -12,7 +12,7 @@ const app = Vue.createApp({
         { name: "elkebash", url: "https://he-store-shams.vercel.app/", img: "assets/img/portfolio/shams-store.png", class: " filter-website" },
         { name: "round-base", url: "https://round-base-three.vercel.app/", img: "assets/img/portfolio/round-base.png", class: " filter-webapplication" },
         { name: "elkebash", url: "https://twision.agency/", img: "assets/img/portfolio/twistion.png", class: " filter-website" },
-        { name: "elkebash", url: "https://todopazar.com/wp/", img: "assets/img/portfolio/todoStroe.png", class: " filter-website" },
+        { name: "elkebash", url: "https://todopazar.com/", img: "assets/img/portfolio/todoStroe.png", class: " filter-website" },
         { name: "elkebash", url: "https://ex.dvtst.com/", img: "assets/img/portfolio/explore.png", class: " filter-website" },
         { name: "elkebash", url: "https://gash.vercel.app/", img: "assets/img/portfolio/gash.png", class: " filter-website" },
         { name: "myBlog", url: "https://my-blog-gamma.vercel.app/", img: "assets/img/portfolio/myBlog.jpg", class: " filter-website filter-webdesign" },
