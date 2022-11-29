@@ -408,12 +408,18 @@
                             <div class="row filter-content" id="projects_id">
                                 <div v-for="project in projects"
                                     :class="`col-lg-4 col-md-6 mix portfolio_box ${project.class}`">
-                                    <a :href="project.url" target="_black" class="link_box">
-                                        <i class="fa fa-link" aria-hidden="true"></i>
-                                    </a>
-                                    <img :src="project.img" alt="project.name"
-                                        onerror="this.src='./assets/img/load-loading.gif'" loding="lazy"
-                                        class="img-fluid" />
+                                    <div class="work-box">
+                                        <a :href="project.url" target="_black" class="link_box">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                            <img :src="project.img" alt="project.name"
+                                                onerror="this.src='./assets/img/load-loading.gif'" loding="lazy"
+                                                class="img-fluid" />
+                                        </a>
+                                        <div class="details-box">
+                                            <a class="project-name" :data-name="project.name" :href="project.url"
+                                                target="_black" v-html="project.name"></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -443,7 +449,7 @@
                                                             <label for="name">Name *</label>
                                                             <div class="input_box">
                                                                 <label for="name">
-                                                                    <i for="name" class="fas fa-h-square"></i></label>
+                                                                    <i for="name" class="fas fa-user"></i></label>
                                                                 <input required v-model.trim="name" type="text"
                                                                     for="name" id="name" name="name">
                                                             </div>

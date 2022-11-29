@@ -316,65 +316,81 @@
   .filter-content {
     .portfolio_box {
       position: relative;
-      overflow: hidden;
       z-index: 1;
-      height: 250px;
       margin: 10px 0;
-      .link_box {
-        position: absolute;
-        inset: 0;
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        i {
-          @extend%trans_4;
-          color: rgba($white_color, 1);
-          font-size: 20px;
-          opacity: 0;
-        }
-      }
-      &:hover {
-        .link_box {
-          i {
-            opacity: 1;
+      .work-box {
+        padding: 12px;
+        background-color: rgba($dark_color2, 0.6);
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        overflow: hidden;
+        &:hover {
+          .link_box {
+            &:after {
+              opacity: 1;
+            }
+            i {
+              opacity: 1;
+            }
+            img {
+              object-position: bottom;
+            }
           }
         }
-        .project_title {
-          opacity: 1;
+        .link_box {
+          display: flex;
+          align-items: center;
+          position: relative;
+          &:after {
+            position: absolute;
+            content: "";
+            inset: 0;
+            opacity: 0;
+            @extend%trans_4;
+            background-color: rgba($dark_color2, 0.4);
+          }
+          i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba($white_color, 1);
+            opacity: 0;
+            z-index: 1;
+            @extend%trans_4;
+          }
+          img {
+            border-radius: 5px;
+            transition: 4s all linear;
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+            object-position: top;
+          }
         }
-        &::after {
-          opacity: 1;
+        .details-box {
+          padding: 12px 0 0;
+          .project-name {
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: rgba($gold_color, 1);
+            display: block;
+            position: relative;
+
+            &::after {
+              content: attr(data-name);
+              position: absolute;
+              left: 0%;
+              top: 50%;
+              transform: translateY(-50%) scale(4);
+              color: rgba($gray_color, 0.02);
+            }
+            &:hover {
+              color: rgba($gray_color, 1);
+            }
+          }
         }
-        img {
-          object-position: bottom;
-        }
-      }
-      &::after {
-        position: absolute;
-        content: "";
-        inset: 0;
-        opacity: 0;
-        background-color: rgba($dark_color, 0.8);
-        @extend%trans_4;
-      }
-      .project_title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: rgba($white_color, 1);
-        opacity: 0;
-        @extend%trans_4;
-        z-index: 2;
-        text-transform: capitalize;
-      }
-      img {
-        height: 250px;
-        width: 100%;
-        object-fit: cover;
-        object-position: top;
-        transition: 4s all linear;
       }
     }
   }

@@ -664,62 +664,79 @@
 }
 .portfolio_tab .filter-content .portfolio_box {
   position: relative;
-  overflow: hidden;
   z-index: 1;
-  height: 250px;
   margin: 10px 0;
 }
-.portfolio_tab .filter-content .portfolio_box .link_box {
-  position: absolute;
-  inset: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.portfolio_tab .filter-content .portfolio_box .work-box {
+  padding: 12px;
+  background-color: rgba(43, 42, 42, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 5px;
+  overflow: hidden;
 }
-.portfolio_tab .filter-content .portfolio_box .link_box i {
-  color: white;
-  font-size: 20px;
-  opacity: 0;
-}
-.portfolio_tab .filter-content .portfolio_box:hover .link_box i {
+.portfolio_tab .filter-content .portfolio_box .work-box:hover .link_box:after {
   opacity: 1;
 }
-.portfolio_tab .filter-content .portfolio_box:hover .project_title {
+.portfolio_tab .filter-content .portfolio_box .work-box:hover .link_box i {
   opacity: 1;
 }
-.portfolio_tab .filter-content .portfolio_box:hover::after {
-  opacity: 1;
-}
-.portfolio_tab .filter-content .portfolio_box:hover img {
+.portfolio_tab .filter-content .portfolio_box .work-box:hover .link_box img {
   -o-object-position: bottom;
      object-position: bottom;
 }
-.portfolio_tab .filter-content .portfolio_box::after {
+.portfolio_tab .filter-content .portfolio_box .work-box .link_box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.portfolio_tab .filter-content .portfolio_box .work-box .link_box:after {
   position: absolute;
   content: "";
   inset: 0;
   opacity: 0;
-  background-color: rgba(17, 17, 17, 0.8);
+  background-color: rgba(43, 42, 42, 0.4);
 }
-.portfolio_tab .filter-content .portfolio_box .project_title {
+.portfolio_tab .filter-content .portfolio_box .work-box .link_box i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   opacity: 0;
-  z-index: 2;
-  text-transform: capitalize;
+  z-index: 1;
 }
-.portfolio_tab .filter-content .portfolio_box img {
+.portfolio_tab .filter-content .portfolio_box .work-box .link_box img {
+  border-radius: 5px;
+  transition: 4s all linear;
   height: 250px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
   -o-object-position: top;
      object-position: top;
-  transition: 4s all linear;
+}
+.portfolio_tab .filter-content .portfolio_box .work-box .details-box {
+  padding: 12px 0 0;
+}
+.portfolio_tab .filter-content .portfolio_box .work-box .details-box .project-name {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fca311;
+  display: block;
+  position: relative;
+}
+.portfolio_tab .filter-content .portfolio_box .work-box .details-box .project-name::after {
+  content: attr(data-name);
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%) scale(4);
+  color: rgba(229, 229, 229, 0.02);
+}
+.portfolio_tab .filter-content .portfolio_box .work-box .details-box .project-name:hover {
+  color: #e5e5e5;
 }
 
 @media (max-width: 768px) {
@@ -1069,7 +1086,7 @@ hr.separator {
     padding: 8px 40px;
   }
 }
-.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .nav_box nav ul li a .icon_box:after, .profile_info .list ul li .title, .buttom_link a, .buttom_link a:after, .sochile_box, .sochile_box:after, .sochile_box .social_links, .sochile_box .social_links a, .experince_box .experince_list .experince_item ul li, .portfolio_tab .portfolio_filter_button_box button, .portfolio_tab .filter-content .portfolio_box .link_box i, .portfolio_tab .filter-content .portfolio_box::after, .portfolio_tab .filter-content .portfolio_box .project_title {
+.nav_box nav ul li a, .nav_box nav ul li a .text, .nav_box nav ul li a .icon_box, .nav_box nav ul li a .icon_box:after, .profile_info .list ul li .title, .buttom_link a, .buttom_link a:after, .sochile_box, .sochile_box:after, .sochile_box .social_links, .sochile_box .social_links a, .experince_box .experince_list .experince_item ul li, .portfolio_tab .portfolio_filter_button_box button, .portfolio_tab .filter-content .portfolio_box .work-box .link_box:after, .portfolio_tab .filter-content .portfolio_box .work-box .link_box i {
   transition: 0.4s all ease-in-out;
 }
 
