@@ -263,6 +263,26 @@
         margin: 0;
         color: #eee;
         font-size: 14px;
+        &.prag {
+          color: rgba($gray_color, 0.7);
+          font-size: 13px;
+          font-weight: 400;
+          margin-top: 10px;
+        }
+        &.jop_name_item {
+          position: relative;
+          padding-left: 20px;
+          &:after {
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            left: 0px;
+            width: 10px;
+            height: 2px;
+            background-color: #eee;
+          }
+        }
       }
 
       ul {
