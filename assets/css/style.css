@@ -641,6 +641,25 @@
   height: 2px;
   background-color: #eee;
 }
+.experince_box .experince_list .experince_item .respon-box .title-item {
+  font-size: 15px;
+  padding: 20px 0 10px;
+  color: #dddddd;
+}
+.experince_box .experince_list .experince_item .respon-box ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+}
+.experince_box .experince_list .experince_item .respon-box ul li {
+  max-width: 100%;
+  padding: 0 10px;
+  color: #eee;
+}
+.experince_box .experince_list .experince_item .respon-box ul li .prag {
+  margin: 0;
+  padding: 0;
+}
 .experince_box .experince_list .experince_item ul {
   display: flex;
   align-items: center;
