@@ -645,6 +645,7 @@
   font-size: 15px;
   padding: 20px 0 10px;
   color: #dddddd;
+  text-transform: uppercase;
 }
 .experince_box .experince_list .experince_item .respon-box ul {
   display: block;
