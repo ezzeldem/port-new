@@ -25,10 +25,16 @@ const app = Vue.createApp({
           class: " filter-website filter-webdesign",
         },
         {
-          name: "elkebash",
+          name: "store Shams",
           url: "https://he-store-shams.vercel.app/",
           img: "assets/img/portfolio/shams-store.png",
           class: " filter-website",
+        },
+        {
+          name: "Code Time",
+          url: "https://thecodetime.com/",
+          img: "assets/img/portfolio/codetime.png",
+          class: "filter-website filter-webdesign",
         },
         {
           name: "round base",
@@ -36,24 +42,24 @@ const app = Vue.createApp({
           img: "assets/img/portfolio/round-base.png",
           class: " filter-webapplication",
         },
+        // {
+        //   name: "twision",
+        //   url: "https://twision.agency/",
+        //   img: "assets/img/portfolio/twistion.png",
+        //   class: " filter-website",
+        // },
         {
-          name: "elkebash",
-          url: "https://twision.agency/",
-          img: "assets/img/portfolio/twistion.png",
-          class: " filter-website",
-        },
-        {
-          name: "elkebash",
+          name: "todopazar",
           url: "https://todopazar.com/",
           img: "assets/img/portfolio/todoStroe.png",
           class: " filter-website",
         },
-        {
-          name: "elkebash",
-          url: "https://ex.dvtst.com/",
-          img: "assets/img/portfolio/explore.png",
-          class: " filter-website",
-        },
+        // {
+        //   name: "elkebash",
+        //   url: "https://ex.dvtst.com/",
+        //   img: "assets/img/portfolio/explore.png",
+        //   class: " filter-website",
+        // },
         {
           name: "elkebash",
           url: "https://gash.vercel.app/",
