@@ -54,12 +54,12 @@ const app = Vue.createApp({
           img: "assets/img/portfolio/todoStroe.png",
           class: " filter-website",
         },
-        // {
-        //   name: "elkebash",
-        //   url: "https://ex.dvtst.com/",
-        //   img: "assets/img/portfolio/explore.png",
-        //   class: " filter-website",
-        // },
+        {
+          name: "elkebash",
+          url: "https://explorecarsrental.com/",
+          img: "assets/img/portfolio/explore.png",
+          class: " filter-website",
+        },
         {
           name: "elkebash",
           url: "https://gash.vercel.app/",
@@ -121,7 +121,7 @@ const app = Vue.createApp({
           class: " filter-website",
         },
         {
-          name: "mariamtest",
+          name: "Mariam",
           url: "https://mariam-lyart.vercel.app/",
           img: "assets/img/portfolio/mariam.jpg",
           class: " filter-website filter-webdesign",
