@@ -26,7 +26,7 @@ const app = Vue.createApp({
         },
         {
           name: "store Shams",
-          url: "https://he-store-shams.vercel.app/",
+          url: "https://store-shams.vercel.app/",
           img: "assets/img/portfolio/shams-store.png",
           class: " filter-website",
         },
@@ -74,7 +74,7 @@ const app = Vue.createApp({
         },
         {
           name: "dOOGarnala",
-          url: "https://doog-arnala-bpky4yuvz-ezzeldem.vercel.app/",
+          url: "doog-arnala.vercel.app",
           img: "assets/img/portfolio/DOOGarnala.jpg",
           class: "filter-website",
         },
